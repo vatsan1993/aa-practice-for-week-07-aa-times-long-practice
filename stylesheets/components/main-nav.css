@@ -1,1 +1,11 @@
 /* Your code here */
+.masthead__nav-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.masthead__nav-item{
+    padding: 10px;
+    font-size: 12px;
+}
