@@ -1,1 +1,99 @@
 /* Your code here */
+.masthead{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "masthead__menu_and_search .  masthead__actions"
+    ". masthead__technologies ."
+    "masthead__date masthead__logo masthead__paper";
+}
+
+.masthead__menu-and-search{
+    grid-area: masthead__menu_and_search;
+}
+.masthead__actions{
+    grid-area: masthead__actions;
+}
+.masthead__technologies{
+    grid-area: masthead__technologies;
+}
+.masthead__date{
+    grid-area:masthead__date ;
+}
+.masthead__logo{
+    grid-area: masthead__logo;
+}
+.masthead__paper{
+    grid-area: masthead__paper;
+}
+
+.masthead__icon-container{
+    font-size: 11px;
+    padding: 7px 9px;
+
+}
+
+.masthead__icon-container:hover{
+    background-color: #e2e2e2;
+}
+
+.masthead__menu-and-search, .masthead__actions{
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+}
+
+.masthead__actions{
+    justify-content: flex-end;
+}
+
+.masthead__menu-and-search, .masthead__actions{
+    padding: 10px 20px;
+}
+
+.masthead__tech-topics{
+    color: #6f6f6f;
+    font-size: 10px;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+.masthead__tech-containers{
+    background-color: white;
+    border: 1px solid black;
+    border-bottom: 0;
+    position: relative;
+    top: 1px;
+}
+
+
+.masthead__logo{
+    align-items: center;
+    display: flex;
+    padding-top: 11px 0;
+}
+
+.masthead__date, .masthead__paper{
+    align-items: flex-end;
+    display: flex;
+    font-size: 11px;
+}
+
+.masthead__date{
+
+}
+
+.masthead__paper{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.masthead__tech-containers{
+    display: flex;
+    justify-content: center;
+}
+
+.masthead__date, .masthead__logo,.masthead__paper {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-bottom: 11px;
+}
