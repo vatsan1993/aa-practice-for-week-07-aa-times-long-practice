@@ -1,1 +1,47 @@
 /* Your code here */
+.interest-bar{
+    display: flex;
+    grid-template-columns: 1, 2, 1, 2, 1, 2, 2, 1, 0.75;
+    grid-template-rows: 1;
+    /* width: 80%; */
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #6f6f6f;
+    ;
+    border-bottom: 1px solid #6f6f6f;
+    padding: 10px;
+}
+
+.interests-bar__image{
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+}
+.interests-bar__headline, .interests-bar__story{
+    margin: 0 20px;
+}
+
+.interests-bar__stock-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px 10px;
+}
+
+.interests-bar__content{
+    border-right: 1px solid #6f6f6f;
+    height: 100px;
+}
+
+.interests-bar__big-text{
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:1000px) {
+    .interest-bar{
+        display: none;
+    }
+}

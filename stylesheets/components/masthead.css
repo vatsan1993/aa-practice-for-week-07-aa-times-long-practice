@@ -97,3 +97,9 @@
     border-top: 1px solid black;
     padding-bottom: 11px;
 }
+
+@media screen and (max-width:1000px) {
+    .masthead__actions button{
+        display: none;
+    }
+}
