@@ -6,9 +6,13 @@
   font-size: 12px;
   padding: 0.5em;
   position: absolute;
-  right: 5px;
-  top: 2.5em;
+  right: 60px;
+  top: 3.5em;
   width: 200px;
+}
+
+.pref--hidden{
+  display: none;
 }
 
 
