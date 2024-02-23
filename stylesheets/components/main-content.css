@@ -1,1 +1,150 @@
 /* Your code here */
+.main-content{
+    display: grid;
+    margin-top: 10px;
+
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "mainArticle mainArticle opinionSection"
+                "mainArticle mainArticle opinionSection"
+                "article2 article3 opinionSection";
+
+}
+
+.main-article-section{
+    grid-area: mainArticle;
+}
+.article-2{
+    grid-area: article2;
+}
+.article-3{
+    grid-area: article3;
+}
+.opinion-section{
+    grid-area: opinionSection;
+    padding: 0 20px;
+}
+
+.main-article-section{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "mainHeading mainHeading"
+                        "article1 videoContainer";
+    border-bottom: 1px solid #6f6f6f;
+
+}
+.main-heading{
+    grid-area: mainHeading;
+}
+.article-1{
+    grid-area: article1;
+}
+.video-container{
+    grid-area: videoContainer;
+}
+
+.article{
+
+}
+
+.article-2, .article-3{
+    border-bottom: 1px solid #6f6f6f;
+}
+.article__header{
+
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-heading{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.article__title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.article__byline{
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 10px;
+    color: #6f6f6f;
+}
+.article__author{
+
+}
+
+.comments-section, .warning-message{
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 10px 0;
+    color: #6f6f6f;
+}
+
+.article-list{
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: disc;
+}
+
+.video-container{
+
+}
+
+.mini-heading{
+
+}
+
+.appacad-hall-img{
+
+}
+.more-articles-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid #6f6f6f;
+
+}
+
+
+.extra-article{
+    border-bottom: 1px solid #6f6f6f;
+    margin: 0 5px;
+    padding: 5px;
+
+}
+
+
+.extra-article.right{
+    border-left: 1px solid #6f6f6f;
+}
+
+
+@media  screen and (max-width: 1200px) {
+    .opinion-section{
+        display: none;
+    }
+
+    .main-content{
+        display: grid;
+        margin-top: 10px;
+
+
+        grid-template-columns: 1fr 1.5fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "mainArticle mainArticle"
+                    "mainArticle mainArticle"
+                    "article2 article3";
+
+    }
+
+
+}
